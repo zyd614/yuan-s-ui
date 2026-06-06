@@ -57,24 +57,25 @@
 
 ### Linux/macOS
 ```sh
-bash <(curl -Ls https://s-ui.alireza0.dev/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/zyd614/yuan-s-ui/main/install.sh)
 ```
 
 ### Windows
 Run PowerShell as Administrator:
 
 ```powershell
-irm https://s-ui.alireza0.dev/install.ps1 | iex
+irm https://raw.githubusercontent.com/zyd614/yuan-s-ui/main/install.ps1 | iex
 ```
 
 ## Install legacy Version
 
-This mirror tracks the hosted installer version `v1.4.2` from `https://s-ui.alireza0.dev`. The old GitHub raw installer path is no longer available.
+This mirror hosts installer packages for `v1.4.2` in this repository under `downloads/v1.4.2/`. The old upstream GitHub raw installer path is no longer available.
+Package hashes are listed in [`downloads/v1.4.2/SHA256SUMS`](https://github.com/zyd614/yuan-s-ui/blob/main/downloads/v1.4.2/SHA256SUMS).
 
 ## Manual installation
 
 ### Linux/macOS
-1. Get the latest version of S-UI based on your OS/Architecture from [https://s-ui.alireza0.dev](https://s-ui.alireza0.dev)
+1. Get the `v1.4.2` package for your OS/Architecture from [`downloads/v1.4.2`](https://github.com/zyd614/yuan-s-ui/tree/main/downloads/v1.4.2).
 2. **OPTIONAL** Copy `s-ui.sh` from the extracted archive to /usr/bin/ and run `chmod +x /usr/bin/s-ui`.
 3. Extract s-ui tar.gz file to a directory of your choice and navigate to the directory where you extracted the tar.gz file.
 4. Copy *.service files to /etc/systemd/system/ and run `systemctl daemon-reload`.
@@ -82,7 +83,7 @@ This mirror tracks the hosted installer version `v1.4.2` from `https://s-ui.alir
 6. Start sing-box service using `systemctl enable sing-box --now`
 
 ### Windows
-1. Get the latest Windows version from [https://s-ui.alireza0.dev](https://s-ui.alireza0.dev)
+1. Get the Windows package from [`downloads/v1.4.2`](https://github.com/zyd614/yuan-s-ui/tree/main/downloads/v1.4.2).
 2. Download the appropriate Windows package (e.g., `s-ui-windows-amd64.zip`)
 3. Extract the ZIP file to a directory of your choice
 4. Run `install-windows.bat` as Administrator
@@ -122,7 +123,7 @@ curl -fsSL https://get.docker.com | sh
 
 ```shell
 mkdir s-ui && cd s-ui
-wget -q https://s-ui.alireza0.dev/docker-compose.yml
+wget -q https://raw.githubusercontent.com/zyd614/yuan-s-ui/main/docker-compose.yml
 docker compose up -d
 ```
 

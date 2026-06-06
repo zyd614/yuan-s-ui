@@ -1,0 +1,14 @@
+﻿{
+    "version":  "v1.4.2",
+    "assets":  [
+                   "s-ui-linux-386.tar.gz",
+                   "s-ui-linux-amd64.tar.gz",
+                   "s-ui-linux-arm64.tar.gz",
+                   "s-ui-linux-armv5.tar.gz",
+                   "s-ui-linux-armv6.tar.gz",
+                   "s-ui-linux-armv7.tar.gz",
+                   "s-ui-linux-s390x.tar.gz",
+                   "s-ui-windows-amd64.zip",
+                   "s-ui-windows-arm64.zip"
+               ]
+}
